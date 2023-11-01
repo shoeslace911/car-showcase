@@ -22,6 +22,15 @@ export default async function Home() {
             <CustomFilter title="year" />
           </div>
         </div>
+
+        {!isDataEmpty ? (
+          <section>We Have Cars</section>
+        ) : (
+          <div>
+            <h2>No results</h2>
+            <p>{allCars?.message}</p>
+          </div>
+        )}
       </div>
     </main>
   );
