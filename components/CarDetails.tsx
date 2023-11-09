@@ -49,8 +49,10 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                       <Image src="/X.png" alt="close" width={20} height={20} className="object-contain" />
                     </button>
 
-                    <div className="flex-1 flex flex-col gap-3">
-                      <div className="relative w-full h-40 bg-pattern bg-cover bg-center rounded-lg"></div>
+                    <div className="flex gap-3">
+                      <div className="relative w-full h-40 bg-pattern bg-cover bg-center rounded-lg">
+                        <Image src="/lexus.png" alt="car model" fill priority className="object-contain" />
+                      </div>
                     </div>
                   </Dialog.Panel>
                 </Transition.Child>
